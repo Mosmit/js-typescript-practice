@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.2s ease;
+    background-color: aqua;
+}
+
+.container{
+    background-color: #333;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.light{
+    background-color: #000;
+    border-radius: 100%;
+    position: relative;
+    height: 2.5em;
+    width: 2.5rem;
+    transition: all 0.2s ease;
+    margin: 0.5rem;
+}
+
+.light.active{
+    background-color: var(--light-color);
+    box-shadow: 0px 0px 20px 5px var(--light-color);
+}
+
+.light.Light1 {
+    --light-color:#00FFFC;
+}
+
+.light.Light2 {
+    --light-color:#FC00FF;
+}
+
+.light.Light3 {
+    --light-color:#FFFC00;
+}
+
+.light.Light4 {
+    --light-color:GREEN;
+}
+
+.light.Light5 {
+    --light-color:ORANGE;
+}
+
+.light.Light6 {
+    --light-color:PURPLE;
+}
