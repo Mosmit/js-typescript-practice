@@ -100,3 +100,13 @@ function addColor(squaresTile){
 function greenColors(){
     return greenColorCodes[Math.floor(Math.random() * greenColorCodes.length)]
 }
+
+
+const letters = document.querySelectorAll(".letters span");
+
+letters.forEach((letter)=>{
+
+    letter.addEventListener("click", (e)=>{
+        e.target.classList.add("active");
+    });
+});

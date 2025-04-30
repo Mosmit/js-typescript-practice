@@ -131,7 +131,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 20vh;
     background-color: rgb(168, 27, 74);
 }
 
@@ -167,4 +167,47 @@ h1{
 .activity:hover{
     transition-duration: 0s;
     overflow: hidden;
+}
+
+section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    flex-direction: column;
+    background: linear-gradient(to right, black, blue);
+}
+
+.letters{
+    perspective:1000px;
+    color: ghostwhite;
+}
+
+.letters span{
+    cursor:pointer;
+    display: inline-block;
+    user-select: none;
+    line-height: 0.5;
+    font-size: 3rem;
+}
+
+.letters span.active{
+    animation: jump 2s ease-in-out;
+    transform-origin: bottom left;
+}
+
+@keyframes jump{
+
+    0%{
+        transform: translate(0,0) rotate(180deg);
+    }
+    25%{
+        transform: scale(2) translate(0, -150px);
+    }
+    75%{
+        transform: scale(1.1,1.1) translate(0,200px);
+    }
+    100%{
+       transform: translate(0,0) rotate(360deg); 
+    }
 }
