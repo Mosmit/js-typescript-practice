@@ -67,7 +67,7 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 20vh;
     background-color: palevioletred;
 }
 
@@ -127,3 +127,44 @@ article{
     opacity: 1;
 }
 
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: rgb(168, 27, 74);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 420px;
+}
+
+.activity{
+    background-color: azure;
+    box-shadow: 0 0 2px beige;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    transition: 3s ease;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.activity:hover{
+    transition-duration: 0s;
+    overflow: hidden;
+}
