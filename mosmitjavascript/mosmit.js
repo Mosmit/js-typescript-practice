@@ -110,3 +110,26 @@ letters.forEach((letter)=>{
         e.target.classList.add("active");
     });
 });
+
+
+const searchHistory = [];
+
+searchIcon.addEventListener("click", ()=>{
+
+    const searchValue = input.value;
+    const resultText = document.getElementById("resultText");
+    resultText.textContent = `You Searched For: ${searchValue}`;
+
+    if (searchValue){
+        searchHistory.push(searchValue);
+        console.log(searchHistory);
+    }
+
+})
+// closeIcon.addEventListener("click", ()=>{
+    
+    
+//     document.getElementById("resultText").textContent = " ";
+// })
+
+

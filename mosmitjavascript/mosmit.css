@@ -69,6 +69,7 @@ article{
     align-items: center;
     min-height: 20vh;
     background-color: palevioletred;
+    flex-direction:column-reverse;
 }
 
 .container1{
