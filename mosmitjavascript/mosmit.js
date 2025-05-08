@@ -102,12 +102,21 @@ function greenColors(){
 }
 
 
+//testing counters
+let counters = 1;
+
 const letters = document.querySelectorAll(".letters span");
 
 letters.forEach((letter)=>{
+    letter.setAttribute("data", `letter number: ${counters}`);
+
+    letter.textContent += `(${counters})`;
+
+    counters++;
 
     letter.addEventListener("click", (e)=>{
         e.target.classList.add("active");
+        `you clicked letter ${e.target.textContent}`
     });
 });
 
