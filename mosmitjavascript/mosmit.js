@@ -33,9 +33,15 @@ const input = document.querySelector(".search");
 const button = document.getElementById("_button");
 const searchIcon = document.querySelector(".fa-search");
 const closeIcon = document.querySelector(".fa-times");
+const reduce = document.getElementById("reduce");
+
+let counters = 10;
 
 
 button.addEventListener("click",()=>{
+    counters--;
+    console.log("counters");
+    reduce.textContent = `reducing ${counters} times`;
 
     container.classList.toggle("active");
     button.classList.toggle("active");
@@ -102,21 +108,12 @@ function greenColors(){
 }
 
 
-//testing counters
-let counters = 1;
-
 const letters = document.querySelectorAll(".letters span");
 
 letters.forEach((letter)=>{
-    letter.setAttribute("data", `letter number: ${counters}`);
-
-    letter.textContent += `(${counters})`;
-
-    counters++;
 
     letter.addEventListener("click", (e)=>{
         e.target.classList.add("active");
-        `you clicked letter ${e.target.textContent}`
     });
 });
 
